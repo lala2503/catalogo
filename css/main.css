@@ -1,0 +1,147 @@
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  -ms-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #0E1826;
+}
+
+.colortext .anim-shape:nth-child(2) {
+  fill: #166973;
+}
+
+.colortext .anim-shape:nth-child(3) {
+  fill: #65BFA6;
+}
+
+.colortext .anim-shape:nth-child(4) {
+  fill: #F2CD5C;
+}
+
+.colortext .anim-shape:nth-child(5) {
+  fill: #F26444;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #EEE!important;
+}
+
+header {
+    height: 100px;
+    background: #EEE;
+    font: 14.5em/1 Open Sans, Impact;
+    text-transform: uppercase;
+    font-size: 4rem !important;
+}
+
+h2 {
+    color: #fff;
+}
+
+.catalogo-menu {
+  padding-top: 140px;
+  
+}
+
+.unity-menu {
+  padding: 40px;
+}
+
+@media (max-width: 576px) { 
+  .catalogo-menu {
+    padding-top: 50px;
+  }
+
+  .unity-menu {
+    padding: 15px;
+    font: 0.9rem Open Sans, Impact;
+    
+  }
+ }
+
+ /* ######  NIÑOS  ####### */
+
+ .barra-nav-boys {
+   background: #17a2b8;
+   position: absolute;
+   z-index: 999;
+   width: 100%
+ }
+
+ .barra-nav-bebito {
+  background: #28a745;
+}
+
+.barra-nav-bebita {
+  background: #ffc107;
+}
+
+.barra-nav-girl {
+  background: #dc3545;
+}
+
+.sociales {
+  cursor: pointer;
+  font-size: 0.30em;
+}
+
+
+.sociales a {
+  color: #fff;
+}
+
+i {
+
+  color: #fff!important;
+}
+
+@media (max-width: 720px) {
+
+  .sociales a small {
+    display: none;
+  }
+}
